@@ -13,9 +13,11 @@
 - User Dashboard
 ![UserDashboard](https://i.imgur.com/lbNNLk2.jpg)
 - Admin User Management
-![AdminUserManagement](https://i.imgur.com/lyK94cP.jpg))
+![AdminUserManagement](https://i.imgur.com/lyK94cP.jpg)
 - Admin Exchange Management
 ![AdminExchangeManagement](https://i.imgur.com/KcO2b69.jpg)
+- Admin Analytics
+![AdminAnalytics](https://i.imgur.com/1Hgxf6d.jpg)
 - User Trading
 ![UserTrading](https://i.imgur.com/ochE64l.jpg))
 - User submitted order
