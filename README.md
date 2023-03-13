@@ -7,11 +7,11 @@
 - Homepage
 ![Homepage](https://i.imgur.com/3IsX80Q.jpg)
 - Login
-![Login](https://imgur.com/3e7536df-d80e-4c56-8284-a628cf5453d4)
+![Login](https://i.imgur.com/hzsAykG.jpg)
 - Register
-![Register](https://imgur.com/6099fc83-e1c1-4de6-9c0d-bacb1f7a1257)
+![Register](https://i.imgur.com/TCAeuQV.jpg)
 - User Dashboard
-![UserDashboard](https://imgur.com/ffc2e291-c3a7-4648-beb5-acd5ef2c7b85)
+![UserDashboard](https://i.imgur.com/lbNNLk2.jpg)
 - Admin User Management
 ![AdminUserManagement](https://i.imgur.com/lyK94cP.jpg))
 - Admin Exchange Management
