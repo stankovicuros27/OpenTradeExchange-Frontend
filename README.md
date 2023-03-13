@@ -19,8 +19,8 @@
 - Admin Analytics
 ![AdminAnalytics](https://i.imgur.com/1Hgxf6d.jpg)
 - User Trading
-![UserTrading](https://i.imgur.com/ochE64l.jpg))
+![UserTrading](https://i.imgur.com/ochE64l.jpg)
 - User submitted order
 ![UserSubmittedOrder](https://i.imgur.com/qUAcf4u.jpg)
 - User Trade Panel
-![UserTradePanel](https://i.imgur.com/S3YHxzY.jpg))
+![UserTradePanel](https://i.imgur.com/S3YHxzY.jpg)
