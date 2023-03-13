@@ -1,0 +1,40 @@
+<body>
+    <div class="text-center">
+        <h3><b>BookID: {{l1Data.bookID}}</b></h3>
+        <br>
+        <div class="row">
+            <div class="col-6 auto-margin">
+                <table style="width:60%" class="table-striped">
+                    <tr>
+                        <th>Timestamp</th>
+                        <td>{{l1Data.timestamp}}</td>
+                    </tr>
+                    <tr>
+                        <th>Buy Volume</th>
+                        <td class="red">{{l1Data.totalBuyVolume}}</td>
+                    </tr>
+                    <tr>
+                        <th>Bid</th>
+                        <td class="red">{{l1Data.bestBuyPrice}}</td>
+                    </tr>
+                    <tr>
+                        <th>Sell Volume</th>
+                        <td class="green">{{l1Data.totalSellVolume}}</td>
+                    </tr>
+                    <tr>
+                        <th>Ask</th>
+                        <td class="green">{{l1Data.bestSellPrice}}</td>
+                    </tr>
+                    <tr>
+                        <th>Last trade</th>
+                        <td class="blue">{{l1Data.lastTradePrice}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-6 auto-margin">
+                <app-chart [orderBook]=orderBook></app-chart>
+            </div>
+        </div>
+        <br>     
+    </div>
+</body>

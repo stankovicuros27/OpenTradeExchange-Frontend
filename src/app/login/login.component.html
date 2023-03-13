@@ -1,0 +1,25 @@
+<app-home-navbar></app-home-navbar>
+<form>
+    <h2 class="text-center">Login</h2>
+    <div>
+        <label>Username</label>
+        <input type="text" name="username" [(ngModel)]="username">
+    </div>
+    <div>
+        <label>Password</label>
+        <input type="password" name="password" [(ngModel)]="password">
+    </div>
+    <div class="red">
+        <label>{{message}}</label>
+    </div>
+    <div class="text-center">
+        <button (click)='login()'>Submit</button>
+    </div>
+    <br>
+    <div class="text-center">
+        Don't have an account?
+    </div>
+    <div class="text-center">
+      <a routerLink="/register">Register</a>
+    </div>
+</form>

@@ -1,0 +1,14 @@
+.ote-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+
+  .real-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 90%;
+  }

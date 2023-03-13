@@ -1,0 +1,151 @@
+<div class="row navbar-background">
+    <div class="col-9">
+        <app-user-navbar></app-user-navbar>
+    </div>
+    <div class="col-3">
+        <app-logout class="logout"></app-logout>
+    </div>
+</div>
+<body>
+    <div>
+        <h2 class="text-center">Order book data:</h2>
+        <div *ngFor='let orderBook of allOrderBooks'>
+            <app-orderbook [orderBook]='orderBook'></app-orderbook>
+            <br>
+            <div class="row">
+                <div class="text-center col-6">
+                    <table style="width: 80%">
+                        <th colspan="2" class="text-center">
+                            <label>Place order:</label>
+                        </th>
+                        <tr>
+                            <td class="text-center">
+                                <label>Price:</label>
+                            </td>
+                            <td class="text-center">
+                                <input type="number">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
+                                <label>Volume:</label>
+                            </td>
+                            <td class="text-center">
+                                <input type="number">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
+                                <label>Side:</label>
+                            </td>
+                            <td class="text-center">
+                                <fieldset>
+                                    &nbsp;
+                                    <input type="radio" id="BUY" name="side" value="BUY"
+                                            checked>
+                                    <label for="BUY">BUY</label>
+                                    &nbsp;
+                                    <input type="radio" id="SELL" name="side" value="SELL">
+                                    <label for="SELL">SELL</label>
+                                </fieldset>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text-center">
+                                <button onclick="placeOrder(orderBook, )">Submit order</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="text-center col-6">
+                    <table style="width: 80%">
+                        <th colspan="2" class="text-center">
+                            <label>Cancel order:</label>
+                        </th>
+                        <tr>
+                            <td class="text-center">
+                                <label>Book ID:</label>
+                            </td>
+                            <td class="text-center">
+                                <textarea name=""></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
+                                <label>Order ID:</label>
+                            </td>
+                            <td class="text-center">
+                                <input type="number">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text-center">
+                                <button>Submit cancel order</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-12">
+                    <br>
+                    <table style="width: 80%">
+                        <tr>
+                            <th colspan="7" class="text-center">
+                                Orders:
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Order ID
+                            </th>
+                            <th>
+                                Side
+                            </th>
+                            <th>
+                                Price
+                            </th>
+                            <th>
+                                Volume
+                            </th>
+                            <th>
+                                Filled Volume
+                            </th>
+                            <th>
+                                Timestamp
+                            </th>
+                            <th>
+                                Status
+                            </th>
+                        </tr>
+                        <tr *ngFor="let order of allOrders">
+                            <ng-container *ngIf="order.bookID == orderBook">
+                                <td>
+                                    {{order.orderID}}
+                                </td>
+                                <td>
+                                    {{order.price}}
+                                </td>
+                                <td>
+                                    {{order.side}}
+                                </td>
+                                <td>
+                                    {{order.volume}}
+                                </td>
+                                <td>
+                                    {{order.filledVolume}}
+                                </td>
+                                <td>
+                                    {{order.timestamp}}
+                                </td>
+                                <td>
+                                    {{order.status}}
+                                </td>
+                            </ng-container>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+</body>

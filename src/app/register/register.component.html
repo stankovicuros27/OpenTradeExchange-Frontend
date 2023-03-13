@@ -1,0 +1,77 @@
+<app-home-navbar></app-home-navbar>
+<form>
+    <h2 class="text-center">Register</h2>
+    <div>
+        <label>Username</label>
+        <input type="text" name="username" [(ngModel)]="username">
+    </div>
+    <div>
+        <label>Password</label>
+        <input type="password" name="password" [(ngModel)]="password">
+    </div>
+    <div>
+        <label>First name</label>
+        <input type="text" name="password" [(ngModel)]="firstname">
+    </div>
+    <div>
+        <label>Last name</label>
+        <input type="text" name="password" [(ngModel)]="lastname">
+    </div>
+    <div>
+        <label>Email</label>
+        <input type="text" name="password" [(ngModel)]="email">
+    </div>
+    <div>
+        <label>Phone</label>
+        <input type="text" name="password" [(ngModel)]="phone">
+    </div>
+    <div class="text-center row">
+        <div class="col">
+            <fieldset>
+                <legend>Gender:</legend>
+                <div>
+                  <input type="radio" id="male" name="x" value="male"
+                         checked>
+                  &nbsp;
+                  <label for="male">male</label>
+                  &nbsp;
+                  &nbsp;
+                  <input type="radio" id="female" name="x" value="female">
+                  &nbsp;
+                  <label for="female">female</label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="col">
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="text-center row">
+        <div>
+            <input
+              type="checkbox"
+              id="accept"
+              name="accept"
+              value="accept" />
+              &nbsp;
+            <label for="accept">Accept terms?</label>
+        </div>
+    </div>
+    <div class="red">
+        <label>{{message}}</label>
+    </div>
+    <div class="text-center">
+        <button (click)='register()'>Submit</button>
+    </div>
+    <br>
+    <div class="text-center">
+        Already have an account?
+    </div>
+    <div class="text-center">
+      <a routerLink="/login">Login</a>
+    </div>
+</form>
